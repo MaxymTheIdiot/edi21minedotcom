@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+.main, body, html {
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+  display: flex;
+  max-height: 85%;
+  flex-wrap: wrap; /* allows cards to move to the next row on small screens */
+  gap: 2rem;
+  padding: 2rem;
+  align-items: stretch; /* keeps cards the same height in a row */
+  flex: 1;
+}
+
+.card-container > div {
+  flex: 1 1 300px; /* grow, shrink, base width */
+  display: flex;
+  flex-direction: column; /* for inner content stretching */
+  min-width: 250px; /* optional, avoids cards being too narrow */
+}
+
+
+.card-container div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0 0 20px;
+    padding: 1rem;
+}
+
+.card-news {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.credits-footer {
+    background-color: #ddd;
+}

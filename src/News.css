@@ -1,0 +1,12 @@
+.news-title {
+    text-align: center;
+    padding: 10px;
+}
+
+.news-box {
+    overflow-y: scroll;
+}
+
+.news-box-news {
+    padding: 10px;
+}
