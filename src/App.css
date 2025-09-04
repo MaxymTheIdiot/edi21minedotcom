@@ -6,7 +6,7 @@
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #03003c;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 
 .card-container {
   display: flex;
-  max-height: 85%;
+  max-height: 95%;
   flex-wrap: wrap; /* allows cards to move to the next row on small screens */
   gap: 2rem;
   padding: 2rem;
@@ -60,5 +60,9 @@ body {
 }
 
 .credits-footer {
-    background-color: #ddd;
+    background-color: #ccc;
+}
+
+.credits-footer p a {
+    text-decoration: underline;
 }

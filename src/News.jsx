@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
 import './News.css';
-import news from './news.txt';
 
 function News() {
   const [lines, setLines] = useState([]);
   
   useEffect(() => {
-    fetch(news)
+    fetch('/news.txt')
       .then(res => res.text())
       .then(text => setLines(text.split("\n")))
       .catch(error => {

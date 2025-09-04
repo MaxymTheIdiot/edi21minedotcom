@@ -16,7 +16,7 @@ function App() {
           </div>
         </div>
         <div className="credits-footer">
-          <p>created by max</p>
+          <p>created with love by max ∙ <a href='/devlog.html'>devlog</a></p>
         </div>
       </div>
     </>
