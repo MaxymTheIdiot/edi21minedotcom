@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import './App.css';
+import './Devlog_App.css';
 
-function App() {
+function Devlog_App() {
     const [devlogs, setDevlogs] = useState([]);
     useEffect(() => {
         fetch('/devlog.txt')
@@ -40,4 +40,4 @@ function App() {
     )
 }
 
-export default App;
+export default Devlog_App;
