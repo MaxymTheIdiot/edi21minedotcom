@@ -1,7 +1,7 @@
 <h1>the first devlog (04/09/2025)</h1>
 <p>first devlog, marking the beginning of pain hahahah heh i am going insane</p>
 <ul>
-<li><a href="https://github.com/MaxymTheIdiot/edi21minecom">transferred code to github because i love github</a></li>
+<li><a href="https://github.com/MaxymTheIdiot/edi21minedotcom">transferred code to github because i love github</a></li>
 <li>the website now DOESN'T look shitty on mobile (i finally did it! i deserve a golden medal for being the best web dev)</li>
 </ul>
 ---
