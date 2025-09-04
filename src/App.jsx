@@ -11,12 +11,9 @@ function App() {
           <div className="card-news">
             <News />
           </div>
-          <div className="other-card">
-            <h1>placeholder</h1>
-          </div>
         </div>
         <div className="credits-footer">
-          <p>created with love by max ∙ <a href='/devlog.html'>devlog</a></p>
+          <p>created with love by max ∙ <a href='/devlog.html'>devlog</a> ∙ <a href='https://github.com/MaxymTheIdiot/edi21minedotcom'>github</a></p>
         </div>
       </div>
     </>

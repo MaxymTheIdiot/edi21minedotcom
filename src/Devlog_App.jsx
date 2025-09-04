@@ -24,9 +24,10 @@ function Devlog_App() {
             <h1>devlog</h1>
             <hr />
           </div>
-          <p>hello and welcum to the edi21mine devlog, where i (max) yap about</p>
-          <p>brain damage that programming this website caused for me, and</p>
-          <p>changes made to this website :&gt;</p>
+          <p className='devlog-welcome'>hello and welcum to the edi21mine devlog,</p>
+          <p className='devlog-welcome'>where i (max) yap about the brain damage</p>
+          <p className='devlog-welcome'>that programming this website caused to</p>
+          <p className='devlog-welcome'>me, and changes made to this website :&gt;</p>
           <hr />
           <div className='devlogs'>
             {devlogs.map((log, i) => (

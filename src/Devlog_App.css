@@ -12,11 +12,12 @@ body {
     font-size: larger;
 }
 
-p {
-    line-height: 0.5;
-}
 
 .back-to-main {
     color: #000;
     font-size: 75%;
+}
+
+p.devlog-welcome {
+    line-height: 0.5em;
 }

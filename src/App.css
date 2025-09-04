@@ -42,7 +42,6 @@ body {
   min-width: 250px; /* optional, avoids cards being too narrow */
 }
 
-
 .card-container div {
     flex-grow: 1;
     flex-shrink: 1;
