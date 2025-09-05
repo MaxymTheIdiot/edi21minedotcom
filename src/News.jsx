@@ -19,7 +19,7 @@ function News() {
         <h1 className="news-title">news</h1>
         <hr />
         <div className="news-box">
-          {lines.map(line => <><div className="news-box-news"><p>{line}</p></div><hr /></>)}
+          {lines.map(line => <><div className="news-box-news" dangerouslySetInnerHTML={{ __html: line }}></div><hr /></>)}
         </div>
       </>
   )

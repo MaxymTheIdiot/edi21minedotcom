@@ -1,3 +1,10 @@
+<h1>something something something (05/09/2025)</h1>
+<p>this was actually painful i hate using git</p>
+<ul>
+<li>you now look at over 213 cats images</li>
+<li>small bug fixes</li>
+</ul>
+---
 <h1>the first devlog (04/09/2025)</h1>
 <p>first devlog, marking the beginning of pain hahahah heh i am going insane</p>
 <ul>

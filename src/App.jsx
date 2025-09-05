@@ -1,6 +1,7 @@
 import './App.css'
 import Nav from './Nav.jsx'
 import News from './News.jsx';
+import Cats from './Cats.jsx';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
         <div className="card-container">
           <div className="card-news">
             <News />
+          </div>
+          <div className="card-cats">
+            <Cats />
           </div>
         </div>
         <div className="credits-footer">
