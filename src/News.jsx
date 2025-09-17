@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import './News.css';
 
 function News() {
-  const [lines, setLines] = useState([]);
+  const [news, setNews] = useState([]);
   
   useEffect(() => {
     fetch('/news.txt')
-      .then(res => res.text())
-      .then(text => setLines(text.split("\n")))
+      .then(res => res.json())
+      .then(json => setNews(json["news"]))
       .catch(error => {
-        setLines(["News fetch error:", error]);
+        setNews(["News fetch error: " + error]);
         console.error("News.jsx: News fetch error:", error);
       })
   }, []);
@@ -19,7 +19,18 @@ function News() {
         <h1 className="news-title">news</h1>
         <hr />
         <div className="news-box">
-          {lines.map(line => <><div className="news-box-news" dangerouslySetInnerHTML={{ __html: line }}></div><hr /></>)}
+          {/* R.I.P another vulnerability */
+          // {lines.map(line => <><div className="news-box-news" dangerouslySetInnerHTML={{ __html: line }}></div><hr /></>)}
+          // BRUTALLY murdered on 17/09/2025 along with its twin in Devlog_App.jsx:36
+          }
+          {news.map((newsEl, i) => (
+            <>
+              <div className="news-box-news">
+                <p>{newsEl}</p>
+              </div>
+              <hr />
+            </>
+          ))}
         </div>
       </>
   )
