@@ -1,0 +1,30 @@
+{
+    "devlogs": [
+        {
+            "title": "devlog 3 or smth",
+            "date": "17/09/2025",
+            "description": "",
+            "changes": [
+                "fixed VERY low chance but still possible XSS vulnerability in devlog page"
+            ]
+        },
+        {
+            "title": "something something something",
+            "date": "05/09/2025",
+            "description": "this was actually painful i hate using git",
+            "changes": [
+                "you can now look at over 213 cat images",
+                "small bug fixes"
+            ]
+        },
+        {
+            "title": "the first devlog",
+            "date": "04/09/2025",
+            "description": "first devlog, marking the beginning of pain hahahah heh i am going insane",
+            "changes": [
+                "transferred code to github because i love github",
+                "the website now DOESN'T look shitty on mobile (i finally did it! i deserve a golden medal for being the best web dev)"
+            ]
+        }
+    ]
+}

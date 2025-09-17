@@ -21,3 +21,7 @@ body {
 p.devlog-welcome {
     line-height: 0.5em;
 }
+
+.devlog-date {
+    font-size: 1.5ex;
+}

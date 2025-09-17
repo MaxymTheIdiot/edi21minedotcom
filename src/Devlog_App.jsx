@@ -4,13 +4,13 @@ import './Devlog_App.css';
 function Devlog_App() {
     const [devlogs, setDevlogs] = useState([]);
     useEffect(() => {
-        fetch('/devlog.txt')
-          .then(res => res.text())
-          .then(text => {
-            setDevlogs(text.split("---").filter(e => e.trim() !== ''));
+        fetch('/devlog.json')
+          .then(res => res.json())
+          .then(json => {
+            setDevlogs(json['devlogs']);
           })
           .catch(error => {
-            setDevlogs([{"title": "Devlog fetch error:" + error, "date": null, "html": null}]);
+            setDevlogs([{"title": "Devlog fetch error:" + error, "date": "", "description": "", changes: []}]);
             console.error("devlog/App.jsx: Devlog fetch error:", error);
           })
     }, []);
@@ -32,7 +32,19 @@ function Devlog_App() {
           <div className='devlogs'>
             {devlogs.map((log, i) => (
                 <>
-                  <div key={i} dangerouslySetInnerHTML={{ __html: log }}></div>
+                  {/* R.I.P vulnerability */
+                  // <div key={i} dangerouslySetInnerHTML={{ __html: log }}></div>
+                  // killed on 17/09/2025
+                  }
+                  <div>
+                    <h1>{log["title"]} <span className="devlog-date">({log["date"]})</span></h1>
+                    <p>{log["description"]}</p>
+                    <ul>
+                      {log["changes"].map((change, j) => (
+                        <li key={j}>{change}</li>
+                      ))}
+                    </ul>
+                  </div>
                   <hr />
                 </>
             ))}
