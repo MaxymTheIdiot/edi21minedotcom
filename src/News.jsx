@@ -5,7 +5,7 @@ function News() {
   const [news, setNews] = useState([]);
   
   useEffect(() => {
-    fetch('/news.txt')
+    fetch('/news.json')
       .then(res => res.json())
       .then(json => setNews(json["news"]))
       .catch(error => {
